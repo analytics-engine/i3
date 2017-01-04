@@ -219,3 +219,5 @@ exec --no-startup-id conky -c ~/.config/conky/conky.conf
 exec --no-startup-id dropbox start
 exec --no-startup-id udiskie -t
 exec --no-startup-id volumeicon
+
+# End of file
