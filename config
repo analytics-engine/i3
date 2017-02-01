@@ -153,12 +153,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Firefox Launch mode
-set $web_browser "web_browser:  [w]-work [d]-default [g]-chrome"
+set $web_browser "web_browser:  [w]-work [d]-default [g]-chrome [b]-brave"
 bindsym $mod+Shift+w mode $web_browser
 mode $web_browser {
   bindsym w exec firefox -p Work
   bindsym d exec firefox -p default
   bindsym g exec google-chrome
+  bindsym b exec brave
   
   # Escape mode
   bindsym Return mode "default"
@@ -220,5 +221,6 @@ exec --no-startup-id conky -c ~/.config/conky/conky.conf
 exec --no-startup-id dropbox start
 exec --no-startup-id udiskie -t
 exec --no-startup-id volumeicon
+exec --no-startup-id firewall-applet
 
 # End of file
